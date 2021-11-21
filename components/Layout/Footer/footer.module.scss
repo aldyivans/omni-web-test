@@ -1,0 +1,23 @@
+.footerWrapper {
+  border-top-left-radius: 100px;
+  @apply relative;
+
+  ::before {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    content: "";
+    z-index: -1;
+    @apply absolute bg-purpleDarkest;
+  }
+}
+
+.footerIcon {
+  filter: brightness(.8) contrast(1.2) grayscale(100%);
+  transition: filter .5s cubic-bezier(.075,.82,.165,1);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}

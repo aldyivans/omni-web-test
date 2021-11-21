@@ -1,0 +1,11 @@
+.progressCircular {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  transition: all .5s cubic-bezier(.075,.82,.165,1);
+  @apply bg-grayDark;
+}
